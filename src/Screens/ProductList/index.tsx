@@ -94,7 +94,7 @@ const ProductList = ({ navigation }: any) => {
     const optimizedFn = useCallback(debounce(handleChange), [productList])
 
     return (
-        <GenericView HeaderTitle="Snacks" ViewStyle={styles.genericView}>
+        <GenericView onButtonPress={() => { }} HeaderTitle="Snacks" ViewStyle={styles.genericView}>
             <View style={{ width: ResponsiveWidth(343), }}>
                 <Spacer space={10} />
                 <SearchBar onTextChange={optimizedFn} />
