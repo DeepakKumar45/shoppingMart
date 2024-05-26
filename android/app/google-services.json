@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "808248519248",
+    "project_id": "shoppingmart-b0739",
+    "storage_bucket": "shoppingmart-b0739.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808248519248:android:e2fe4055b6deea455e7f55",
+        "android_client_info": {
+          "package_name": "com.shoppingmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808248519248-3hsouffu6uk0s80iklaqn3c4ddl6isq3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shoppingmart",
+            "certificate_hash": "39c8f81915fa7d13988dc91dbe8eed5a50a4f12b"
+          }
+        },
+        {
+          "client_id": "808248519248-9horqu9t710cqkmu48654n4jhsj0d5hr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyzfCC6PupaekpcGmg67GfzUOYgXGRjBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808248519248-9horqu9t710cqkmu48654n4jhsj0d5hr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

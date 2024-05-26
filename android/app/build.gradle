@@ -1,7 +1,10 @@
 apply plugin: "com.android.application"
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle" 
+apply plugin: "com.google.gms.google-services"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
-
+ 
+// import org.apache.tools.ant.taskdefs.condition.Os
 /**
  * This is the configuration block to customize your React Native Android app.
  * By default you don't need to apply any configuration, just uncomment the lines you need.
@@ -81,6 +84,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        //  vectorDrawables.useSupportLibrary = true
     }
     signingConfigs {
         debug {
@@ -108,7 +112,8 @@ dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
     implementation("com.facebook.react:flipper-integration")
-
+    implementation("com.google.firebase:firebase-analytics")
+// implementation project(':react-native-vector-icons')
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")
     } else {
@@ -117,3 +122,7 @@ dependencies {
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+
+// project.ext.vectoricons = [
+//     iconFontNames: [ 'MaterialIcons.ttf','Ionicons.ttf', 'EvilIcons.ttf','Entypo.ttf','FontAwesome.ttf','Feather.ttf','FontAwesome5.ttf','AntDesign.ttf' ] // Name of the font files you want to copy
+// ]
